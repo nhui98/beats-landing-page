@@ -77,4 +77,21 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const scrollReveal = ScrollReveal({
+    distance: "60px",
+    duration: 2500,
+    delay: 400
+    // reset: true
+});
 
+scrollReveal.reveal(`.home-header, .section-title`, {delay: 600});
+scrollReveal.reveal(`.home-footer`, {delay: 700});
+scrollReveal.reveal(`.home-img`, {delay: 900, origin: "top"});
+
+scrollReveal.reveal(`.sponsor, .products-card, .footer-logo, .footer-content, .footer-copy`, {origin: "top", interval: 100});
+
+scrollReveal.reveal(`.specs-data, .discount-animate`, {origin: "left", interval: 100});
+scrollReveal.reveal(`.specs-img, .discount-img`, {origin: "right"});
+
+scrollReveal.reveal(`.case-img`, {origin: "top"});
+scrollReveal.reveal(`.case-data`,)
